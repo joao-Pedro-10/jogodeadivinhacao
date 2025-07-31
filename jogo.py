@@ -1,0 +1,11 @@
+import random
+print("#######################")
+print("#                jogo da adivinhação #                       ")
+print("# 🔥                JOAO    🔥   #                           ")
+print("# 🔥                PEDRO   🔥                               ")
+print("#      # #     #  # #    #  #      #  #      #  # # #         ")
+print("#      #   #   #  # #    #    #    #    #    #      #         ")
+print("#      #  #    #         #    #    #  #      #      #         ")          
+print("#      #       #  # #    #   #     #    #    #  # # #         ")
+print("#######################")
+numeroSecreto = random.randrange(0,100)
