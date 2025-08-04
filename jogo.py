@@ -35,9 +35,23 @@ for rodada in range (1, totalTentativas +1):
     chute = int(chute_str)
 
     if(chute < 1 or > 100):
-        print("Número invaledo")
+        print("Número invaledo desculpe")
         continue
 
     acertou = chute == numeroSecreto
     maior = chute > numeroSecreto
     menor = chute < numeroSecreto 
+
+    if(acertou):
+        print(f"Você acertou e fez {pontos}parabéns! ")
+        break
+    else:
+        if(maior):
+            print("Você errou! Seu chute foi maior que o número secreto")
+        elif(menor):
+            print("Você errou! Seu chute foi menor que o número secreto")
+
+            pontosPerdidos = abs(numeroSecreto - chute)
+            pontos = pontos - pontosPerdidos
+
+print("Fim de jogo ! O número era ",numeroSecreto)
